@@ -14,6 +14,7 @@ requests:
       osPayloads:
         - ";echo test"
         - ";echo test #"
+        - ";echo test ;"
         - "& echo test #"
         - "& echo test &"
         - "| echo test"
@@ -34,6 +35,8 @@ requests:
         - ;system('echo test')
         - eval('echo test')
         - eval('echo test');
+        - response.write test
+        - :response.write test
 
     matchers-condition: or
     matchers:
